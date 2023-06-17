@@ -6,6 +6,7 @@ import (
 )
 
 func GetRandomRecipes() (Recipe, error) {
+	//
 	url := "https://api.spoonacular.com/recipes/random"
 	method := "GET"
 
@@ -15,6 +16,7 @@ func GetRandomRecipes() (Recipe, error) {
 	if err != nil {
 		return Recipe{}, err
 	}
+	//secret variable
 	req.Header.Add("x-api-key", "ff56e33bbf144ac5967a9b61b1bb58f9")
 
 	res, err := client.Do(req)

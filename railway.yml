@@ -1,4 +1,0 @@
-name: random-recipe-api-go-dep
-language: go
-buildCommand: go build -o app
-startCommand: ./app

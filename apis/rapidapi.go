@@ -7,6 +7,7 @@ import (
 )
 
 func GetCurrencyExchange() (float64, error) {
+	//
 	url := "https://currency-exchange.p.rapidapi.com/exchange?from=USD&to=IDR&q=1.0"
 	method := "GET"
 
@@ -16,6 +17,7 @@ func GetCurrencyExchange() (float64, error) {
 	if err != nil {
 		return 0.0, nil
 	}
+	//
 	req.Header.Add("X-RapidAPI-Host", "currency-exchange.p.rapidapi.com")
 	req.Header.Add("X-RapidAPI-Key", "e9b079b792msh3e1aa8608df520dp15d272jsn0831149d10d6")
 
